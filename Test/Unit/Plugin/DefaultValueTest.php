@@ -45,8 +45,12 @@ class DefaultValueTest extends TestCase
      * @return void
      */
     #[\PHPUnit\Framework\Attributes\DataProvider('defaultValueDataProvider')]
-    public function testBeforeFromDefinition(string $sqlVersion, bool $handledByMagento, $default, ?array $expected): void
-    {
+    public function testBeforeFromDefinition(
+        string $sqlVersion,
+        bool $handledByMagento,
+        $default,
+        ?array $expected
+    ): void {
         $result = $this->createPlugin($sqlVersion, $handledByMagento)->beforeFromDefinition(
             $this->createStub(DefinitionAggregator::class),
             ['name' => 'col', 'default' => $default]
