@@ -1,0 +1,32 @@
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and reports
+*.log
+*.csv
+!i18n/*.csv
+*.report
+
+# Node/npm
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# PHPUnit / testing
+.phpunit.result.cache
+test-output/
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*~

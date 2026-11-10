@@ -1,32 +1,33 @@
 {
-  "name": "best4u/module-mariadb-hotfix",
-  "description": "Adds MariaDB 11/12 support for Magento 2.4.0-2.4.8.",
-  "type": "magento2-module",
-  "license": "proprietary",
-  "config": {
-    "sort-packages": true
-  },
-  "version": "1.0.0",
-  "require": {
-    "magento/framework": ">=103.0.0 <=103.0.9"
-  },
-  "authors": [
-    {
-      "name": "Best4u Media B.V.",
-      "email": "magento@best4u.nl",
-      "homepage": "https://www.best4u.nl",
-      "role": "Technical Support"
-    }
-  ],
-  "support": {
-    "email": "support@best4u.nl"
-  },
-  "autoload": {
-    "files": [
-      "registration.php"
+    "name": "best4u/module-mariadb-hotfix",
+    "description": "Adds MariaDB 11.4, 11.8 and 12.x support for Magento 2.4.4-2.4.8 (not needed for Magento 2.4.9 and later).",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "config": {
+        "sort-packages": true
+    },
+    "version": "1.1.0",
+    "require": {
+        "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0||~8.5.0",
+        "magento/framework": "~103.0.4"
+    },
+    "authors": [
+        {
+            "name": "Best4u Media B.V.",
+            "email": "magento@best4u.nl",
+            "homepage": "https://www.best4u.nl",
+            "role": "Technical Support"
+        }
     ],
-    "psr-4": {
-      "Best4u\\MariaDbHotfix\\": ""
+    "support": {
+        "email": "support@best4u.nl"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Best4u\\MariaDbHotfix\\": ""
+        }
     }
-  }
 }
